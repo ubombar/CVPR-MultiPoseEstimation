@@ -4,6 +4,7 @@ import torch.nn as nn
 import os 
 from PIL import Image
 import numpy as np 
+import math
 
 class GenericDataLoader():
     def __init__(self, source, device='cpu', batch=32):
@@ -19,10 +20,10 @@ class GenericDataLoader():
         return self
     
     def __len__(self):
-        return len(self.images)
+        return math.ceil(len(self.images) / self.batch)
     
     def __next__(self):
-        if self.i >= len(self):
+        if self.i >= len(self.images):
             raise StopIteration()
         toload = self.images[self.i:self.i + self.batch]
         toloadcount = len(toload)

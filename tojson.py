@@ -32,5 +32,6 @@ if __name__ == "__main__":
         json.dump(all_boxes, outfile, indent=4)
 
     print('Done!')
-# python .\tojson.py --source 'D:\DATASETS\lsp\images' --dest 'runs/lsp.json' --batch 512
-# python .\tojson.py --source 'D:\DATASETS\crowdpose\images' --dest 'runs/crowdpose.json' --batch 512
+# python .\tojson.py --source 'D:\DATASETS\lsp\images' --dest 'results/lsp.json' --batch 512
+# python .\tojson.py --source 'D:\DATASETS\crowdpose\images' --dest 'results/crowdpose.json' --batch 512
+# I ahvent tested this on gpu because it were giving errors.
