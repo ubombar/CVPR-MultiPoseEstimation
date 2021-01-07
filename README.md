@@ -1,3 +1,3 @@
 # CVPR-MultiPoseEstimation
 -
-The final version of our submision code nad liks are located in CVPR-MultiPoseEstimation folder.
+The final version of our submision code and links are located in CVPR-MultiPoseEstimation folder.
